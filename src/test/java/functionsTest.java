@@ -5,34 +5,34 @@ import java.io.IOException;
 
 public class functionsTest {
     @Test
-    public void sumTest() throws IOException {
+    public void sumTest() {
         int a = 5;
         int b = 10;
-        int sum = a + b;
+        int sum = sum(a,b);
         Assertions.assertEquals(15, sum);
     }
 
     @Test
-    public void subTest() throws IOException {
+    public void subTest() {
         int a = 25;
         int b = 10;
-        int sub = a - b;
+        int sub = sub(a,b);
         Assertions.assertEquals(15, sub);
     }
 
     @Test
-    public void mulTest() throws IOException {
+    public void mulTest() {
         int a = 25;
         int b = 10;
-        int mul = a * b;
+        int mul = mul(a,b);
         Assertions.assertEquals(250, mul);
     }
 
     @Test
-    public void divTest() throws IOException {
+    public void divTest() {
         int a = 55;
         int b = 5;
-        int div = a / b;
+        int div = (int) div(a,b);
         Assertions.assertEquals(11, div);
     }
 }
